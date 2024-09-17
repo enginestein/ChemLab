@@ -1,4 +1,4 @@
-// Interface for chemical element properties
+
 interface ChemicalElement {
     name: string | 'unknown';
     symbol: string | 'unknown';
@@ -6,11 +6,11 @@ interface ChemicalElement {
     atomicWeight: number | 'unknown';
     period: number | 'unknown';
     group: number | 'unknown';
-    phaseAtSTP: 'solid' | 'liquid' | 'gas' |'unknown'; // Standard Temperature and Pressure
-    meltingPoint?: number | 'unknown';   // in Kelvin
-    boilingPoint?: number| 'unknown';   // in Kelvin
-    electronegativity?: number | 'unknown'; // Pauling scale
-    density?: number | 'unknown';        // g/cm³ at STP
+    phaseAtSTP: 'solid' | 'liquid' | 'gas' |'unknown'; 
+    meltingPoint?: number | 'unknown';   
+    boilingPoint?: number| 'unknown';   
+    electronegativity?: number | 'unknown'; 
+    density?: number | 'unknown';        
     isRadioactive?: boolean | 'unknown';
     electronConfiguration: string | 'unknown';
     category: 'alkali metal' | 'alkaline earth metal' | 'transition metal' | 
@@ -43,10 +43,10 @@ const strontium: ChemicalElement = {
     period: 5,
     group: 2,
     phaseAtSTP: 'solid',
-    meltingPoint: 777,    // in Kelvin
-    boilingPoint: 1382,   // in Kelvin
+    meltingPoint: 777,    
+    boilingPoint: 1382,   
     electronegativity: 0.95,
-    density: 2.63,        // g/cm³ at STP
+    density: 2.63,        
     isRadioactive: false,
     electronConfiguration: '[Kr] 5s2',
     category: 'alkaline earth metal',
@@ -56,14 +56,14 @@ const livermorium: ChemicalElement = {
     name: 'Livermorium',
     symbol: 'Lv',
     atomicNumber: 116,
-    atomicWeight: 293,  // Approximate value
+    atomicWeight: 293,  
     period: 7,
     group: 16,
-    phaseAtSTP: 'solid', // Expected phase, as Livermorium's phase at STP is not well-documented
-    meltingPoint: 500,   // Approximate value in Kelvin
-    boilingPoint: 700,   // Approximate value in Kelvin
-    electronegativity: 1.0, // Approximate value
-    density: 5.0,        // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 500,   
+    boilingPoint: 700,   
+    electronegativity: 1.0, 
+    density: 5.0,        
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',
     category: 'post-transition metal',
@@ -352,10 +352,10 @@ const rubidium: ChemicalElement = {
     period: 5,
     group: 1,
     phaseAtSTP: 'solid',
-    meltingPoint: 312.46,  // in Kelvin
-    boilingPoint: 688.0,   // in Kelvin
+    meltingPoint: 312.46,  
+    boilingPoint: 688.0,   
     electronegativity: 0.82,
-    density: 1.532,        // g/cm³ at STP
+    density: 1.532,        
     isRadioactive: false,
     electronConfiguration: '[Kr] 5s1',
     category: 'alkali metal',
@@ -464,7 +464,7 @@ const lutetium: ChemicalElement = {
     category: 'lanthanide',
 };
 
-// Actinides
+
 const actinium: ChemicalElement = {
     name: 'Actinium',
     symbol: 'Ac',
@@ -745,10 +745,10 @@ const caesium: ChemicalElement = {
     period: 6,
     group: 1,
     phaseAtSTP: 'solid',
-    meltingPoint: 301.59,  // in Kelvin
-    boilingPoint: 671.0,   // in Kelvin
+    meltingPoint: 301.59,  
+    boilingPoint: 671.0,   
     electronegativity: 0.79,
-    density: 1.933,        // g/cm³ at STP
+    density: 1.933,        
     isRadioactive: false,
     electronConfiguration: '[Xe] 6s1',
     category: 'alkali metal',
@@ -758,14 +758,14 @@ const francium: ChemicalElement = {
     name: 'Francium',
     symbol: 'Fr',
     atomicNumber: 87,
-    atomicWeight: 223,  // Approximate value
+    atomicWeight: 223,  
     period: 7,
     group: 1,
-    phaseAtSTP: 'solid', // Expected phase, as Francium is highly radioactive and its phase at STP is not well-documented
-    meltingPoint: 300,   // Approximate value in Kelvin
-    boilingPoint: 950,   // Approximate value in Kelvin
-    electronegativity: 0.7, // Approximate value
-    density: 1.87,       // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 300,   
+    boilingPoint: 950,   
+    electronegativity: 0.7, 
+    density: 1.87,       
     isRadioactive: true,
     electronConfiguration: '[Rn] 7s1',
     category: 'alkali metal',
@@ -779,10 +779,10 @@ const barium: ChemicalElement = {
     period: 6,
     group: 2,
     phaseAtSTP: 'solid',
-    meltingPoint: 1000,    // in Kelvin
-    boilingPoint: 1890,    // in Kelvin
+    meltingPoint: 1000,    
+    boilingPoint: 1890,    
     electronegativity: 0.89,
-    density: 3.62,         // g/cm³ at STP
+    density: 3.62,         
     isRadioactive: false,
     electronConfiguration: '[Xe] 6s2',
     category: 'alkaline earth metal',
@@ -793,14 +793,14 @@ const radium: ChemicalElement = {
     name: 'Radium',
     symbol: 'Ra',
     atomicNumber: 88,
-    atomicWeight: 226,    // Approximate value
+    atomicWeight: 226,    
     period: 7,
     group: 2,
-    phaseAtSTP: 'solid',  // Expected phase, as Radium is highly radioactive and its phase at STP is not well-documented
-    meltingPoint: 1413,   // Approximate value in Kelvin
-    boilingPoint: 1413,   // Approximate value in Kelvin
-    electronegativity: 0.90, // Approximate value
-    density: 5.5,         // Approximate value in g/cm³
+    phaseAtSTP: 'solid',  
+    meltingPoint: 1413,   
+    boilingPoint: 1413,   
+    electronegativity: 0.90, 
+    density: 5.5,         
     isRadioactive: true,
     electronConfiguration: '[Rn] 7s2',
     category: 'alkaline earth metal',
@@ -815,10 +815,10 @@ const boron: ChemicalElement = {
     period: 2,
     group: 13,
     phaseAtSTP: 'solid',
-    meltingPoint: 2349,  // Kelvin
-    boilingPoint: 4200,  // Kelvin
+    meltingPoint: 2349,  
+    boilingPoint: 4200,  
     electronegativity: 2.04,
-    density: 2.46,  // g/cm³
+    density: 2.46,  
     isRadioactive: false,
     electronConfiguration: '[He] 2s2 2p1',
     category: 'metalloid',
@@ -832,10 +832,10 @@ const aluminum: ChemicalElement = {
     period: 3,
     group: 13,
     phaseAtSTP: 'solid',
-    meltingPoint: 933.47,  // Kelvin
-    boilingPoint: 2792,   // Kelvin
+    meltingPoint: 933.47,  
+    boilingPoint: 2792,   
     electronegativity: 1.61,
-    density: 2.70,  // g/cm³
+    density: 2.70,  
     isRadioactive: false,
     electronConfiguration: '[Ne] 3s2 3p1',
     category: 'post-transition metal',
@@ -849,10 +849,10 @@ const gallium: ChemicalElement = {
     period: 4,
     group: 13,
     phaseAtSTP: 'solid',
-    meltingPoint: 302.91,  // Kelvin
-    boilingPoint: 2204,    // Kelvin
+    meltingPoint: 302.91,  
+    boilingPoint: 2204,    
     electronegativity: 1.81,
-    density: 5.91,  // g/cm³
+    density: 5.91,  
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d10 4s2 4p1',
     category: 'post-transition metal',
@@ -866,10 +866,10 @@ const indium: ChemicalElement = {
     period: 5,
     group: 13,
     phaseAtSTP: 'solid',
-    meltingPoint: 429.75,  // Kelvin
-    boilingPoint: 2345,    // Kelvin
+    meltingPoint: 429.75,  
+    boilingPoint: 2345,    
     electronegativity: 1.78,
-    density: 7.31,  // g/cm³
+    density: 7.31,  
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d10 5s2 5p1',
     category: 'post-transition metal',
@@ -883,10 +883,10 @@ const thallium: ChemicalElement = {
     period: 6,
     group: 13,
     phaseAtSTP: 'solid',
-    meltingPoint: 577,  // Kelvin
-    boilingPoint: 1746,  // Kelvin
+    meltingPoint: 577,  
+    boilingPoint: 1746,  
     electronegativity: 1.62,
-    density: 11.85,  // g/cm³
+    density: 11.85,  
     isRadioactive: false,
     electronConfiguration: '[Xe] 4f14 5d10 6s2 6p1',
     category: 'post-transition metal',
@@ -896,14 +896,14 @@ const nihonium: ChemicalElement = {
     name: 'Nihonium',
     symbol: 'Nh',
     atomicNumber: 113,
-    atomicWeight: 286,  // Approximate value
+    atomicWeight: 286,  
     period: 7,
     group: 13,
-    phaseAtSTP: 'solid', // Expected phase, as Nihonium is a synthetic element
-    meltingPoint: null, // Not well-documented
-    boilingPoint: null, // Not well-documented
-    electronegativity: null, // Not well-documented
-    density: null, // Not well-documented
+    phaseAtSTP: 'solid', 
+    meltingPoint: null, 
+    boilingPoint: null, 
+    electronegativity: null, 
+    density: null, 
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',
     category: 'post-transition metal',
@@ -917,10 +917,10 @@ const carbon: ChemicalElement = {
     period: 2,
     group: 14,
     phaseAtSTP: 'solid',
-    meltingPoint: 3915,  // Graphite form
-    boilingPoint: 4300,  // Graphite form
+    meltingPoint: 3915,  
+    boilingPoint: 4300,  
     electronegativity: 2.55,
-    density: 2.267,  // Graphite form
+    density: 2.267,  
     isRadioactive: false,
     electronConfiguration: '[He] 2s2 2p2',
     category: 'nonmetal',
@@ -1002,10 +1002,10 @@ const nitrogen: ChemicalElement = {
     period: 2,
     group: 15,
     phaseAtSTP: 'gas',
-    meltingPoint: 63.15,  // Kelvin
-    boilingPoint: 77.36,  // Kelvin
+    meltingPoint: 63.15,  
+    boilingPoint: 77.36,  
     electronegativity: 3.04,
-    density: 0.0012506,   // g/cm³
+    density: 0.0012506,   
     isRadioactive: false,
     electronConfiguration: '[He] 2s2 2p3',
     category: 'nonmetal',
@@ -1019,10 +1019,10 @@ const phosphorus: ChemicalElement = {
     period: 3,
     group: 15,
     phaseAtSTP: 'solid',
-    meltingPoint: 317.3,  // Kelvin
-    boilingPoint: 553,    // Kelvin
+    meltingPoint: 317.3,  
+    boilingPoint: 553,    
     electronegativity: 2.19,
-    density: 1.82,        // g/cm³
+    density: 1.82,        
     isRadioactive: false,
     electronConfiguration: '[Ne] 3s2 3p3',
     category: 'nonmetal',
@@ -1036,10 +1036,10 @@ const arsenic: ChemicalElement = {
     period: 4,
     group: 15,
     phaseAtSTP: 'solid',
-    meltingPoint: 817,    // Kelvin
-    boilingPoint: 614,    // Kelvin
+    meltingPoint: 817,    
+    boilingPoint: 614,    
     electronegativity: 2.18,
-    density: 5.72,        // g/cm³
+    density: 5.72,        
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d10 4s2 4p3',
     category: 'metalloid',
@@ -1053,10 +1053,10 @@ const antimony: ChemicalElement = {
     period: 5,
     group: 15,
     phaseAtSTP: 'solid',
-    meltingPoint: 903.78, // Kelvin
-    boilingPoint: 1860,   // Kelvin
+    meltingPoint: 903.78, 
+    boilingPoint: 1860,   
     electronegativity: 2.05,
-    density: 6.697,       // g/cm³
+    density: 6.697,       
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d10 5s2 5p3',
     category: 'post-transition metal',
@@ -1070,10 +1070,10 @@ const bismuth: ChemicalElement = {
     period: 6,
     group: 15,
     phaseAtSTP: 'solid',
-    meltingPoint: 544.7,  // Kelvin
-    boilingPoint: 1837,   // Kelvin
+    meltingPoint: 544.7,  
+    boilingPoint: 1837,   
     electronegativity: 1.97,
-    density: 9.78,        // g/cm³
+    density: 9.78,        
     isRadioactive: false,
     electronConfiguration: '[Xe] 4f14 5d10 6s2 6p3',
     category: 'post-transition metal',
@@ -1088,10 +1088,10 @@ const sulfur: ChemicalElement = {
     period: 3,
     group: 16,
     phaseAtSTP: 'solid',
-    meltingPoint: 388.36, // Kelvin
-    boilingPoint: 718,    // Kelvin
+    meltingPoint: 388.36, 
+    boilingPoint: 718,    
     electronegativity: 2.58,
-    density: 2.07, // g/cm³
+    density: 2.07, 
     isRadioactive: false,
     electronConfiguration: '[Ne] 3s2 3p4',
     category: 'nonmetal',
@@ -1105,10 +1105,10 @@ const selenium: ChemicalElement = {
     period: 4,
     group: 16,
     phaseAtSTP: 'solid',
-    meltingPoint: 458,    // Kelvin
-    boilingPoint: 685,    // Kelvin
+    meltingPoint: 458,    
+    boilingPoint: 685,    
     electronegativity: 2.55,
-    density: 4.82, // g/cm³
+    density: 4.82, 
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d10 4s2 4p4',
     category: 'metalloid',
@@ -1122,10 +1122,10 @@ const tellurium: ChemicalElement = {
     period: 5,
     group: 16,
     phaseAtSTP: 'solid',
-    meltingPoint: 722.66, // Kelvin
-    boilingPoint: 1261,   // Kelvin
+    meltingPoint: 722.66, 
+    boilingPoint: 1261,   
     electronegativity: 2.10,
-    density: 6.24, // g/cm³
+    density: 6.24, 
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d10 5s2 5p4',
     category: 'metalloid',
@@ -1139,10 +1139,10 @@ const polonium: ChemicalElement = {
     period: 6,
     group: 16,
     phaseAtSTP: 'solid',
-    meltingPoint: 527,    // Kelvin
-    boilingPoint: 1235,   // Kelvin
+    meltingPoint: 527,    
+    boilingPoint: 1235,   
     electronegativity: 2.0,
-    density: 9.17, // g/cm³
+    density: 9.17, 
     isRadioactive: true,
     electronConfiguration: '[Xe] 4f14 5d10 6s2 6p4',
     category: 'post-transition metal',
@@ -1152,14 +1152,14 @@ const flevorium: ChemicalElement = {
     name: 'Flevorium',
     symbol: 'Fl',
     atomicNumber: 114,
-    atomicWeight: 289, // Approximate value
+    atomicWeight: 289, 
     period: 7,
     group: 14,
-    phaseAtSTP: 'solid', // Expected phase based on its position in the periodic table
-    meltingPoint: 330,  // Approximate value in Kelvin
-    boilingPoint: 420,  // Approximate value in Kelvin
-    electronegativity: 1.0, // Approximate value
-    density: 14.0,     // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 330,  
+    boilingPoint: 420,  
+    electronegativity: 1.0, 
+    density: 14.0,     
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',
     category: 'post-transition metal',
@@ -1174,10 +1174,10 @@ const fluorine: ChemicalElement = {
     period: 2,
     group: 17,
     phaseAtSTP: 'gas',
-    meltingPoint: 53.5,  // in Kelvin
-    boilingPoint: 85.0,  // in Kelvin
+    meltingPoint: 53.5,  
+    boilingPoint: 85.0,  
     electronegativity: 3.98,
-    density: 0.0017,    // in g/cm³
+    density: 0.0017,    
     isRadioactive: false,
     electronConfiguration: '[He] 2s2 2p5',
     category: 'halogen',
@@ -1191,10 +1191,10 @@ const chlorine: ChemicalElement = {
     period: 3,
     group: 17,
     phaseAtSTP: 'gas',
-    meltingPoint: 171.6,  // in Kelvin
-    boilingPoint: 239.1,  // in Kelvin
+    meltingPoint: 171.6,  
+    boilingPoint: 239.1,  
     electronegativity: 3.16,
-    density: 0.0032,    // in g/cm³
+    density: 0.0032,    
     isRadioactive: false,
     electronConfiguration: '[Ne] 3s2 3p5',
     category: 'halogen',
@@ -1208,10 +1208,10 @@ const bromine: ChemicalElement = {
     period: 4,
     group: 17,
     phaseAtSTP: 'liquid',
-    meltingPoint: 265.8,  // in Kelvin
-    boilingPoint: 331.8,  // in Kelvin
+    meltingPoint: 265.8,  
+    boilingPoint: 331.8,  
     electronegativity: 2.96,
-    density: 3.102,     // in g/cm³
+    density: 3.102,     
     isRadioactive: false,
     electronConfiguration: '[Ar] 4s2 3d10 4p5',
     category: 'halogen',
@@ -1225,10 +1225,10 @@ const iodine: ChemicalElement = {
     period: 5,
     group: 17,
     phaseAtSTP: 'solid',
-    meltingPoint: 387.0,  // in Kelvin
-    boilingPoint: 457.4,  // in Kelvin
+    meltingPoint: 387.0,  
+    boilingPoint: 457.4,  
     electronegativity: 2.66,
-    density: 4.933,     // in g/cm³
+    density: 4.933,     
     isRadioactive: false,
     electronConfiguration: '[Kr] 5s2 4d10 5p5',
     category: 'halogen',
@@ -1238,14 +1238,14 @@ const astatine: ChemicalElement = {
     name: 'Astatine',
     symbol: 'At',
     atomicNumber: 85,
-    atomicWeight: 210,  // Approximate value
+    atomicWeight: 210,  
     period: 6,
     group: 17,
-    phaseAtSTP: 'solid', // Expected phase, as Astatine is highly radioactive and its phase at STP is not well-documented
-    meltingPoint: 575,   // Approximate value in Kelvin
-    boilingPoint: 610,   // Approximate value in Kelvin
-    electronegativity: 2.2,  // Approximate value
-    density: 7.0,       // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 575,   
+    boilingPoint: 610,   
+    electronegativity: 2.2,  
+    density: 7.0,       
     isRadioactive: true,
     electronConfiguration: '[Xe] 4f14 5d10 6s2 6p5',
     category: 'halogen',
@@ -1255,14 +1255,14 @@ const tennessine: ChemicalElement = {
     name: 'Tennessine',
     symbol: 'Ts',
     atomicNumber: 117,
-    atomicWeight: 294,  // Approximate value
+    atomicWeight: 294,  
     period: 7,
     group: 17,
-    phaseAtSTP: 'solid', // Expected phase, as Tennessine is highly radioactive and its phase at STP is not well-documented
-    meltingPoint: 723,   // Approximate value in Kelvin
-    boilingPoint: 900,   // Approximate value in Kelvin
-    electronegativity: 1.0,  // Approximate value
-    density: 7.5,       // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 723,   
+    boilingPoint: 900,   
+    electronegativity: 1.0,  
+    density: 7.5,       
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p5',
     category: 'halogen',
@@ -1277,10 +1277,10 @@ const neon: ChemicalElement = {
     period: 2,
     group: 18,
     phaseAtSTP: 'gas',
-    meltingPoint: 24.56, // Kelvin
-    boilingPoint: 27.07, // Kelvin
-    electronegativity: null, // Not applicable for noble gases
-    density: 0.0008999, // g/cm³
+    meltingPoint: 24.56, 
+    boilingPoint: 27.07, 
+    electronegativity: null, 
+    density: 0.0008999, 
     isRadioactive: false,
     electronConfiguration: '1s2 2s2 2p6',
     category: 'noble gas',
@@ -1294,10 +1294,10 @@ const argon: ChemicalElement = {
     period: 3,
     group: 18,
     phaseAtSTP: 'gas',
-    meltingPoint: 83.8, // Kelvin
-    boilingPoint: 87.3, // Kelvin
-    electronegativity: null, // Not applicable for noble gases
-    density: 0.0017837, // g/cm³
+    meltingPoint: 83.8, 
+    boilingPoint: 87.3, 
+    electronegativity: null, 
+    density: 0.0017837, 
     isRadioactive: false,
     electronConfiguration: '1s2 2s2 2p6 3s2 3p6',
     category: 'noble gas',
@@ -1311,10 +1311,10 @@ const krypton: ChemicalElement = {
     period: 4,
     group: 18,
     phaseAtSTP: 'gas',
-    meltingPoint: 115.79, // Kelvin
-    boilingPoint: 119.93, // Kelvin
-    electronegativity: null, // Not applicable for noble gases
-    density: 0.003733, // g/cm³
+    meltingPoint: 115.79, 
+    boilingPoint: 119.93, 
+    electronegativity: null, 
+    density: 0.003733, 
     isRadioactive: false,
     electronConfiguration: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6',
     category: 'noble gas',
@@ -1328,10 +1328,10 @@ const xenon: ChemicalElement = {
     period: 5,
     group: 18,
     phaseAtSTP: 'gas',
-    meltingPoint: 161.4, // Kelvin
-    boilingPoint: 165.03, // Kelvin
-    electronegativity: null, // Not applicable for noble gases
-    density: 0.005887, // g/cm³
+    meltingPoint: 161.4, 
+    boilingPoint: 165.03, 
+    electronegativity: null, 
+    density: 0.005887, 
     isRadioactive: false,
     electronConfiguration: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6',
     category: 'noble gas',
@@ -1341,14 +1341,14 @@ const radon: ChemicalElement = {
     name: 'Radon',
     symbol: 'Rn',
     atomicNumber: 86,
-    atomicWeight: 222, // Approximate value
+    atomicWeight: 222, 
     period: 6,
     group: 18,
     phaseAtSTP: 'gas',
-    meltingPoint: 202, // Kelvin
-    boilingPoint: 211, // Kelvin
-    electronegativity: null, // Not applicable for noble gases
-    density: 0.00973, // g/cm³
+    meltingPoint: 202, 
+    boilingPoint: 211, 
+    electronegativity: null, 
+    density: 0.00973, 
     isRadioactive: true,
     electronConfiguration: '1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6',
     category: 'noble gas',
@@ -1358,14 +1358,14 @@ const yttrium: ChemicalElement = {
     name: 'Yttrium',
     symbol: 'Y',
     atomicNumber: 39,
-    atomicWeight: 88.906,  // Approximate value
+    atomicWeight: 88.906,  
     period: 5,
     group: 3,
     phaseAtSTP: 'solid',
-    meltingPoint: 1799,   // Approximate value in Kelvin
-    boilingPoint: 3246,   // Approximate value in Kelvin
-    electronegativity: 1.22, // Approximate value
-    density: 4.47,        // Approximate value in g/cm³
+    meltingPoint: 1799,   
+    boilingPoint: 3246,   
+    electronegativity: 1.22, 
+    density: 4.47,        
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d1 5s2',
     category: 'transition metal',
@@ -1376,14 +1376,14 @@ const scandium: ChemicalElement = {
     name: 'Scandium',
     symbol: 'Sc',
     atomicNumber: 21,
-    atomicWeight: 44.955,  // Approximate value
+    atomicWeight: 44.955,  
     period: 4,
     group: 3,
     phaseAtSTP: 'solid',
-    meltingPoint: 1814,   // Approximate value in Kelvin
-    boilingPoint: 3109,   // Approximate value in Kelvin
-    electronegativity: 1.36, // Approximate value
-    density: 2.98,        // Approximate value in g/cm³
+    meltingPoint: 1814,   
+    boilingPoint: 3109,   
+    electronegativity: 1.36, 
+    density: 2.98,        
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d1 4s2',
     category: 'transition metal',
@@ -1394,14 +1394,14 @@ const titanium: ChemicalElement = {
     name: 'Titanium',
     symbol: 'Ti',
     atomicNumber: 22,
-    atomicWeight: 47.867,  // Approximate value
+    atomicWeight: 47.867,  
     period: 4,
     group: 4,
     phaseAtSTP: 'solid',
-    meltingPoint: 1885,   // Approximate value in Kelvin
-    boilingPoint: 3287,   // Approximate value in Kelvin
-    electronegativity: 1.54, // Approximate value
-    density: 4.54,        // Approximate value in g/cm³
+    meltingPoint: 1885,   
+    boilingPoint: 3287,   
+    electronegativity: 1.54, 
+    density: 4.54,        
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d2 4s2',
     category: 'transition metal',
@@ -1411,14 +1411,14 @@ const zirconium: ChemicalElement = {
     name: 'Zirconium',
     symbol: 'Zr',
     atomicNumber: 40,
-    atomicWeight: 91.224,  // Approximate value
+    atomicWeight: 91.224,  
     period: 5,
     group: 4,
     phaseAtSTP: 'solid',
-    meltingPoint: 2135,   // Approximate value in Kelvin
-    boilingPoint: 4682,   // Approximate value in Kelvin
-    electronegativity: 1.33, // Approximate value
-    density: 6.52,        // Approximate value in g/cm³
+    meltingPoint: 2135,   
+    boilingPoint: 4682,   
+    electronegativity: 1.33, 
+    density: 6.52,        
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d2 5s2',
     category: 'transition metal',
@@ -1428,14 +1428,14 @@ const hafnium: ChemicalElement = {
     name: 'Hafnium',
     symbol: 'Hf',
     atomicNumber: 72,
-    atomicWeight: 178.49,  // Approximate value
+    atomicWeight: 178.49,  
     period: 6,
     group: 4,
     phaseAtSTP: 'solid',
-    meltingPoint: 2506,   // Approximate value in Kelvin
-    boilingPoint: 4876,   // Approximate value in Kelvin
-    electronegativity: 1.30, // Approximate value
-    density: 13.31,       // Approximate value in g/cm³
+    meltingPoint: 2506,   
+    boilingPoint: 4876,   
+    electronegativity: 1.30, 
+    density: 13.31,       
     isRadioactive: false,
     electronConfiguration: '[Xe] 4f14 5d2 6s2',
     category: 'transition metal',
@@ -1445,14 +1445,14 @@ const rutherfordium: ChemicalElement = {
     name: 'Rutherfordium',
     symbol: 'Rf',
     atomicNumber: 104,
-    atomicWeight: 267,  // Approximate value
+    atomicWeight: 267,  
     period: 7,
     group: 4,
-    phaseAtSTP: 'unknown', // Expected phase is not well-documented
-    meltingPoint: 2100,   // Approximate value in Kelvin
-    boilingPoint: 5500,   // Approximate value in Kelvin
+    phaseAtSTP: 'unknown', 
+    meltingPoint: 2100,   
+    boilingPoint: 5500,   
     electronegativity: 'unknown',
-    density: 'unknown',   // Approximate value not well-documented
+    density: 'unknown',   
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d2 7s2',
     category: 'transition metal',
@@ -1466,10 +1466,10 @@ const vanadium: ChemicalElement = {
     period: 4,
     group: 5,
     phaseAtSTP: 'solid',
-    meltingPoint: 2183, // Approximate value in Kelvin
-    boilingPoint: 2910, // Approximate value in Kelvin
+    meltingPoint: 2183, 
+    boilingPoint: 2910, 
     electronegativity: 1.63,
-    density: 6.11, // Approximate value in g/cm³
+    density: 6.11, 
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d3 4s2',
     category: 'transition metal',
@@ -1483,10 +1483,10 @@ const niobium: ChemicalElement = {
     period: 5,
     group: 5,
     phaseAtSTP: 'solid',
-    meltingPoint: 2750, // Approximate value in Kelvin
-    boilingPoint: 4744, // Approximate value in Kelvin
+    meltingPoint: 2750, 
+    boilingPoint: 4744, 
     electronegativity: 1.6,
-    density: 8.57, // Approximate value in g/cm³
+    density: 8.57, 
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d4 5s1',
     category: 'transition metal',
@@ -1500,10 +1500,10 @@ const tantalum: ChemicalElement = {
     period: 6,
     group: 5,
     phaseAtSTP: 'solid',
-    meltingPoint: 3290, // Approximate value in Kelvin
-    boilingPoint: 5731, // Approximate value in Kelvin
+    meltingPoint: 3290, 
+    boilingPoint: 5731, 
     electronegativity: 1.5,
-    density: 16.69, // Approximate value in g/cm³
+    density: 16.69, 
     isRadioactive: false,
     electronConfiguration: '[Xe] 4f14 5d3 6s2',
     category: 'transition metal',
@@ -1517,8 +1517,8 @@ const dubnium: ChemicalElement = {
     period: 7,
     group: 5,
     phaseAtSTP: 'unknown',
-    meltingPoint: 2830, // Approximate value in Kelvin
-    boilingPoint: 3500, // Approximate value in Kelvin
+    meltingPoint: 2830, 
+    boilingPoint: 3500, 
     electronegativity: undefined,
     density: undefined,
     isRadioactive: true,
@@ -1534,10 +1534,10 @@ const chromium: ChemicalElement = {
     period: 4,
     group: 6,
     phaseAtSTP: 'solid',
-    meltingPoint: 2180, // Approximate value in Kelvin
-    boilingPoint: 2944, // Approximate value in Kelvin
+    meltingPoint: 2180, 
+    boilingPoint: 2944, 
     electronegativity: 1.66,
-    density: 7.14, // Approximate value in g/cm³
+    density: 7.14, 
     isRadioactive: false,
     electronConfiguration: '[Ar] 3d5 4s1',
     category: 'transition metal',
@@ -1551,10 +1551,10 @@ const molybdenum: ChemicalElement = {
     period: 5,
     group: 6,
     phaseAtSTP: 'solid',
-    meltingPoint: 2896, // Approximate value in Kelvin
-    boilingPoint: 4912, // Approximate value in Kelvin
+    meltingPoint: 2896, 
+    boilingPoint: 4912, 
     electronegativity: 2.16,
-    density: 10.28, // Approximate value in g/cm³
+    density: 10.28, 
     isRadioactive: false,
     electronConfiguration: '[Kr] 4d5 5s1',
     category: 'transition metal',
@@ -1568,10 +1568,10 @@ const tungsten: ChemicalElement = {
     period: 6,
     group: 6,
     phaseAtSTP: 'solid',
-    meltingPoint: 3422, // Approximate value in Kelvin
-    boilingPoint: 5555, // Approximate value in Kelvin
+    meltingPoint: 3422, 
+    boilingPoint: 5555, 
     electronegativity: 2.36,
-    density: 19.25, // Approximate value in g/cm³
+    density: 19.25, 
     isRadioactive: false,
     electronConfiguration: '[Xe] 4f14 5d4 6s2',
     category: 'transition metal',
@@ -1585,8 +1585,8 @@ const seaborgium: ChemicalElement = {
     period: 7,
     group: 6,
     phaseAtSTP: 'unknown',
-    meltingPoint: 2700, // Approximate value in Kelvin
-    boilingPoint: 3300, // Approximate value in Kelvin
+    meltingPoint: 2700, 
+    boilingPoint: 3300, 
     electronegativity: undefined,
     density: undefined,
     isRadioactive: true,
@@ -1649,7 +1649,7 @@ const darmstadtium: ChemicalElement = {
     name: 'Darmstadtium',
     symbol: 'Ds',
     atomicNumber: 110,
-    atomicWeight: 281,  // Approximate value
+    atomicWeight: 281,  
     period: 7,
     group: 10,
     phaseAtSTP: 'unknown', 
@@ -1717,7 +1717,7 @@ const roentgenium: ChemicalElement = {
     name: 'Roentgenium',
     symbol: 'Rg',
     atomicNumber: 111,
-    atomicWeight: 282,  // Approximate value
+    atomicWeight: 282,  
     period: 7,
     group: 11,
     phaseAtSTP: 'unknown', 
@@ -1786,17 +1786,17 @@ const copernicium: ChemicalElement = {
     name: 'Copernicium',
     symbol: 'Cn',
     atomicNumber: 112,
-    atomicWeight: 285,  // Approximate value
+    atomicWeight: 285,  
     period: 7,
     group: 12,
-    phaseAtSTP: 'unknown',  // Copernicium is a synthetic element and its phase at STP is not well-determined
-    meltingPoint: 'unknown',  // Data is not well-established due to its short half-life
-    boilingPoint: 'unknown',  // Data is not well-established due to its short half-life
-    electronegativity: 'unknown',  // Electronegativity is not well-determined
-    density: 'unknown',  // Density is not well-established
+    phaseAtSTP: 'unknown',  
+    meltingPoint: 'unknown',  
+    boilingPoint: 'unknown',  
+    electronegativity: 'unknown',  
+    density: 'unknown',  
     isRadioactive: true,
-    electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',  // Predicted configuration based on periodic trends
-    category: 'post-transition metal',  // Based on its position in the periodic table
+    electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',  
+    category: 'post-transition metal',  
 };
 
 const manganese: ChemicalElement = {
@@ -1854,7 +1854,7 @@ const bohrium: ChemicalElement = {
     name: 'Bohrium',
     symbol: 'Bh',
     atomicNumber: 107,
-    atomicWeight: 264,  // Approximate value
+    atomicWeight: 264,  
     period: 7,
     group: 7,
     phaseAtSTP: 'unknown', 
@@ -1922,7 +1922,7 @@ const hassium: ChemicalElement = {
     name: 'Hassium',
     symbol: 'Hs',
     atomicNumber: 108,
-    atomicWeight: 269,  // Approximate value
+    atomicWeight: 269,  
     period: 7,
     group: 8,
     phaseAtSTP: 'unknown', 
@@ -1990,16 +1990,16 @@ const meitnerium: ChemicalElement = {
     name: 'Meitnerium',
     symbol: 'Mt',
     atomicNumber: 109,
-    atomicWeight: 278, // The most stable isotope
+    atomicWeight: 278, 
     period: 7,
-    group: 9, // Group 9 (the same as Iridium, Rhodium)
+    group: 9, 
     phaseAtSTP: 'solid',
-    meltingPoint: 1100, // Estimated value
-    boilingPoint: 1500, // Estimated value
-    electronegativity: null, // Not well defined due to its high instability
-    density: null, // Not well defined due to its high instability
+    meltingPoint: 1100, 
+    boilingPoint: 1500, 
+    electronegativity: null, 
+    density: null, 
     isRadioactive: true,
-    electronConfiguration: '[Rn] 5f14 6d7 7s2', // Based on periodic trends
+    electronConfiguration: '[Rn] 5f14 6d7 7s2', 
     category: 'transition metal',
 };
 
@@ -2007,14 +2007,14 @@ const moscovium: ChemicalElement = {
     name: 'Moscovium',
     symbol: 'Mc',
     atomicNumber: 115,
-    atomicWeight: 288,  // Approximate value
+    atomicWeight: 288,  
     period: 7,
     group: 15,
-    phaseAtSTP: 'solid', // Expected phase, as Moscovium is highly radioactive and its phase at STP is not well-documented
-    meltingPoint: 300,   // Approximate value in Kelvin
-    boilingPoint: 500,   // Approximate value in Kelvin
-    electronegativity: 1.0, // Approximate value
-    density: 7.0,        // Approximate value in g/cm³
+    phaseAtSTP: 'solid', 
+    meltingPoint: 300,   
+    boilingPoint: 500,   
+    electronegativity: 1.0, 
+    density: 7.0,        
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p1',
     category: 'post-transition metal',
@@ -2024,14 +2024,14 @@ const oganesson: ChemicalElement = {
     name: 'Oganesson',
     symbol: 'Og',
     atomicNumber: 118,
-    atomicWeight: 294,  // Approximate value
+    atomicWeight: 294,  
     period: 7,
     group: 18,
-    phaseAtSTP: 'unknown', // Oganesson's phase at STP is not well-documented due to its high instability
-    meltingPoint: 330,   // Approximate value in Kelvin
-    boilingPoint: 500,   // Approximate value in Kelvin
-    electronegativity: 1.0, // Approximate value
-    density: 4.9,        // Approximate value in g/cm³
+    phaseAtSTP: 'unknown', 
+    meltingPoint: 330,   
+    boilingPoint: 500,   
+    electronegativity: 1.0, 
+    density: 4.9,        
     isRadioactive: true,
     electronConfiguration: '[Rn] 5f14 6d10 7s2 7p6',
     category: 'noble gas',
