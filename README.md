@@ -3,7 +3,7 @@ Perform chemistry calculations and operations.
 
 # Quickstart
 
-`npm install chemlab`
+`npm install chemicallab`
 
 ## Getting element information from symbol
 
